@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: video-merge-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
